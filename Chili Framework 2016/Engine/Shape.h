@@ -6,8 +6,8 @@
 class Shape
 {
 public:
-	Shape(Color color) : _color(color) { ; }
-	virtual Pixel[] getPixels() = 0;
+	Shape(Color color, Pixel location) : _color(color), _location(location) {}
+	//virtual Pixel[] getPixels() = 0;
 
 protected:
 	Color _color;
